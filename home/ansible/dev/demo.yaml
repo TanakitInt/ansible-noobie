@@ -1,0 +1,8 @@
+---
+- name: I am going to install some packages
+  hosts: all
+  tasks:
+   - name: install httpd
+     yum:
+      name: httpd
+      state: latest
